@@ -2,9 +2,7 @@
 
 <template>
   <div class="top">
-    <div
-      class="d-flex justify-content-between container py-2 align-items-center"
-    >
+    <div class="head-all container flex">
       <!-- Lenguage -->
       <form>
         <label for="lenguage"></label>
@@ -17,8 +15,8 @@
       </form>
       <!-- /Lenguage -->
       <!-- Menu -->
-      <div class="d-flex">
-        <ul class="d-flex menu">
+      <div class="right flex">
+        <ul class="menu flex">
           <li>home</li>
           <li>Pages</li>
           <li>Course Formats</li>
@@ -27,7 +25,7 @@
         </ul>
         <!-- /Menu -->
         <!-- Social -->
-        <ul class="d-flex logo">
+        <ul class="logo flex">
           <li><font-awesome-icon icon="fa-brands fa-facebook" /></li>
           <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
           <li><font-awesome-icon icon="fa-brands fa-instagram" /></li>
@@ -41,7 +39,12 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
+.head-all {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
 .top {
   border-bottom: 1px solid black;
   color: #afaead;
@@ -56,6 +59,9 @@ li {
   list-style: none;
 }
 
+.right {
+  gap: 40px;
+}
 .menu {
   gap: 30px;
 }

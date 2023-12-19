@@ -3,7 +3,7 @@
 <template>
   <div class="bottom">
     <!-- Menu -->
-    <ul class="container py-4 d-flex justify-content-center">
+    <ul class="container flex">
       <li><font-awesome-icon icon="fa-solid fa-chart-line" /> Business</li>
       <li><font-awesome-icon icon="fa-solid fa-palette" />Design</li>
       <li><font-awesome-icon icon="fa-solid fa-gear" />Development</li>
@@ -14,13 +14,16 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .bottom {
   background-color: #273044;
   color: white;
 
   ul {
     gap: 55px;
+    list-style: none;
+    padding: 30px 0;
+    justify-content: center;
   }
 }
 </style>

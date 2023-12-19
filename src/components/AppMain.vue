@@ -1,11 +1,16 @@
 <script>
+import Jumbo from './Jumbo.vue';
+
 export default {
   name: 'AppMain',
+  components: {
+    Jumbo,
+  },
 };
 </script>
 
 <template>
-  <h2>jumbotron</h2>
+  <Jumbo />
   <h2>Popular Development Courses</h2>
   <h2>Limitless learning</h2>
   <h2>Recent Courses</h2>
