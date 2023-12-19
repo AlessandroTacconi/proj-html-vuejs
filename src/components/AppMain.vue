@@ -1,17 +1,19 @@
 <script>
 import Jumbo from './Jumbo.vue';
+import MainPopCourses from './MainPopCourses.vue';
 
 export default {
   name: 'AppMain',
   components: {
     Jumbo,
+    MainPopCourses,
   },
 };
 </script>
 
 <template>
   <Jumbo />
-  <h2>Popular Development Courses</h2>
+  <MainPopCourses />
   <h2>Limitless learning</h2>
   <h2>Recent Courses</h2>
   <h2>Subscribe</h2>
