@@ -2,6 +2,7 @@
 
 <template>
   <div class="bottom">
+    <!-- Menu -->
     <ul class="container py-4 d-flex justify-content-center">
       <li><font-awesome-icon icon="fa-solid fa-chart-line" /> Business</li>
       <li><font-awesome-icon icon="fa-solid fa-palette" />Design</li>
@@ -9,6 +10,7 @@
       <li><font-awesome-icon icon="fa-regular fa-face-grin" />Lifestyle</li>
       <li><font-awesome-icon icon="fa-solid fa-print" />Office Productivity</li>
     </ul>
+    <!-- /Menu -->
   </div>
 </template>
 

@@ -4,9 +4,12 @@
   <div
     class="container d-flex align-items-center py-3 justify-content-evenly principal"
   >
+    <!-- Logo -->
     <div>
       <img src="/img/MasterStudy.svg" alt="" />
     </div>
+    <!-- /Logo -->
+    <!-- Search bar -->
     <div class="d-flex align-items-center find">
       <div>Category</div>
       <div class="input-group mb-3">
@@ -21,6 +24,8 @@
         /></span>
       </div>
     </div>
+    <!-- /Search bar -->
+    <!-- Altro -->
     <div class="d-flex plus">
       <div>
         <font-awesome-icon icon="fa-solid fa-bullhorn" />Become an instructor
@@ -29,11 +34,14 @@
         <font-awesome-icon icon="fa-solid fa-briefcase" />For enterprise
       </div>
     </div>
+    <!-- /Altro -->
+    <!-- Log in -->
     <div class="d-flex sign align-items-center">
       <div><font-awesome-icon icon="fa-regular fa-user" />Log in</div>
       <button type="button" class="btn btn-danger">Sign in</button>
       <div><font-awesome-icon icon="fa-regular fa-bookmark" /></div>
     </div>
+    <!-- /Log in -->
   </div>
 </template>
 
