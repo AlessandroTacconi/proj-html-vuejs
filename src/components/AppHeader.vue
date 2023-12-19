@@ -14,9 +14,11 @@ export default {
 </script>
 
 <template>
-  <HeaderTop />
-  <HeaderPrincipal />
-  <HeaderBottomVue />
+  <header>
+    <HeaderTop />
+    <HeaderPrincipal />
+    <HeaderBottomVue />
+  </header>
 </template>
 
 <style lang="scss">

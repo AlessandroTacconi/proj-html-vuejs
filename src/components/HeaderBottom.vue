@@ -2,12 +2,12 @@
 
 <template>
   <div class="bottom">
-    <ul class="container py-3 d-flex justify-content-center">
-      <li>Business</li>
-      <li>Design</li>
-      <li>Development</li>
-      <li>Lifestyle</li>
-      <li>Office Productivity</li>
+    <ul class="container py-4 d-flex justify-content-center">
+      <li><font-awesome-icon icon="fa-solid fa-chart-line" /> Business</li>
+      <li><font-awesome-icon icon="fa-solid fa-palette" />Design</li>
+      <li><font-awesome-icon icon="fa-solid fa-gear" />Development</li>
+      <li><font-awesome-icon icon="fa-regular fa-face-grin" />Lifestyle</li>
+      <li><font-awesome-icon icon="fa-solid fa-print" />Office Productivity</li>
     </ul>
   </div>
 </template>
