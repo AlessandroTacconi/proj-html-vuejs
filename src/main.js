@@ -26,6 +26,8 @@ import { faPalette } from '@fortawesome/free-solid-svg-icons';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 import { faFaceGrin } from '@fortawesome/free-regular-svg-icons';
 import { faPrint } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
 library.add(
@@ -45,7 +47,9 @@ library.add(
   faPalette,
   faGear,
   faFaceGrin,
-  faPrint
+  faPrint,
+  faStar,
+  faStarHalfStroke
 );
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');

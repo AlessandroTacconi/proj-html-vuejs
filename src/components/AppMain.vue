@@ -1,12 +1,16 @@
 <script>
 import Jumbo from './Jumbo.vue';
 import MainPopCourses from './MainPopCourses.vue';
+import MainLimitlessLearning from './MainLimitlessLearning.vue';
+import MainRecentCourses from './MainRecentCourses.vue';
 
 export default {
   name: 'AppMain',
   components: {
     Jumbo,
     MainPopCourses,
+    MainLimitlessLearning,
+    MainRecentCourses,
   },
 };
 </script>
@@ -14,8 +18,8 @@ export default {
 <template>
   <Jumbo />
   <MainPopCourses />
-  <h2>Limitless learning</h2>
-  <h2>Recent Courses</h2>
+  <MainLimitlessLearning />
+  <MainRecentCourses />
   <h2>Subscribe</h2>
   <h2>Popular Courses</h2>
   <h2>Cards</h2>

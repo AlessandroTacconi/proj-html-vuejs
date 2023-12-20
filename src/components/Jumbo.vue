@@ -6,6 +6,7 @@ export default {
 </script>
 
 <template>
+  <!-- JUMBO -->
   <div class="jumbo flex">
     <div class="jumbo-text flex container">
       <h2>Udemy Affiliate Sales</h2>
@@ -13,15 +14,17 @@ export default {
     </div>
     <div class="prova"><img src="/img/slide-1.jpg" alt="foto di gruppo" /></div>
   </div>
+  <!-- /JUMBO -->
 </template>
 
-<style scoped ang="scss">
+<style scoped lang="scss">
 .jumbo {
   margin-top: 30px;
   color: white;
   background-color: #ff4450;
   .jumbo-text {
     flex-direction: column;
+    padding-left: 20px;
 
     gap: 30px;
     h2 {

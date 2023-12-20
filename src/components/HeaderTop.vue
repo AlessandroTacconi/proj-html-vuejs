@@ -43,7 +43,7 @@
 .head-all {
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 .top {
   border-bottom: 1px solid black;
