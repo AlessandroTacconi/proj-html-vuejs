@@ -7,6 +7,7 @@ export default {
 
 <template>
   <div class="container flex">
+    <!-- sheet1 -->
     <div class="left sheet flex">
       <div><img src="/img/image-box-1.png" alt="" /></div>
       <div>
@@ -17,6 +18,9 @@ export default {
         <button class="btn-red">Start Teaching</button>
       </div>
     </div>
+    <!-- /sheet1 -->
+    <!-- sheet2 -->
+
     <div class="right sheet flex">
       <div><img src="/img/image-box-2.png" alt="" /></div>
       <div>
@@ -25,6 +29,7 @@ export default {
         <button class="btn-red">Doing Business</button>
       </div>
     </div>
+    <!-- /sheet2 -->
   </div>
 </template>
 

@@ -2,7 +2,11 @@
 
 <template>
   <div class="container flex">
+    <!-- logo -->
     <div class="logo"><img src="/img/MasterStudy.svg" alt="logo" /></div>
+    <!-- /logo -->
+    <!-- research -->
+
     <div class="flex research">
       <div class="category">
         <font-awesome-icon icon="fa-solid fa-bars" /><span>category</span>
@@ -15,6 +19,9 @@
         />
       </div>
     </div>
+    <!-- /research -->
+    <!-- third section -->
+
     <div class="flex third-section">
       <div>
         <font-awesome-icon icon="fa-solid fa-bullhorn" /><span
@@ -27,6 +34,9 @@
         >
       </div>
     </div>
+    <!-- /third section -->
+    <!-- log-in -->
+
     <div class="flex log-in">
       <div>
         <font-awesome-icon icon="fa-regular fa-user" /><span>Log in</span>
@@ -36,6 +46,7 @@
         <font-awesome-icon icon="fa-regular fa-bookmark" class="bookmark" />
       </div>
     </div>
+    <!-- /log-in -->
   </div>
 </template>
 

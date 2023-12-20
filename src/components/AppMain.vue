@@ -6,6 +6,7 @@ import MainRecentCourses from './MainRecentCourses.vue';
 import MainSubscribe from './MainSubscribe.vue';
 import MainPopCourses from './MainPopCourses.vue';
 import MainStart from './MainStart.vue';
+import MainYourFuture from './MainYourFuture.vue';
 
 export default {
   name: 'AppMain',
@@ -17,6 +18,7 @@ export default {
     MainSubscribe,
     MainPopCourses,
     MainStart,
+    MainYourFuture,
   },
 };
 </script>
@@ -29,7 +31,7 @@ export default {
   <MainSubscribe />
   <MainPopCourses />
   <MainStart />
-  <h2>Investing For Your Future</h2>
+  <MainYourFuture />
 </template>
 
 <style scoped></style>
