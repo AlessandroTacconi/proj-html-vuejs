@@ -164,48 +164,6 @@ export default {
 .container {
   padding: 90px 20px;
 
-  .cards {
-    justify-content: center;
-    gap: 20px;
-    .card {
-      border: 1px solid #e0e0e0;
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      .info {
-        padding: 20px;
-
-        .field-courses {
-          font-size: 0.75rem;
-          color: #a2a2a2;
-          margin-bottom: 20px;
-        }
-
-        .title-courses {
-          font-size: 0.9375rem;
-          padding-bottom: 20px;
-          border-bottom: 1px solid #e0e0e0;
-        }
-        .info-courses {
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 20px;
-          font-size: 0.875rem;
-          .stars {
-            color: #efb467;
-          }
-          .old-price {
-            font-size: 0.75rem;
-            color: #a2a2a2;
-            text-decoration: line-through;
-          }
-        }
-      }
-    }
-  }
-
   h3 {
     margin-bottom: 40px;
   }

@@ -17,7 +17,7 @@ export default {
           Online courses open the opportunity for learning to almost anyone,
           regardeless of their scheduling commitments.
         </p>
-        <button>Read More</button>
+        <button class="btn-red">Read More</button>
       </div>
       <!-- /DESCRIPTION -->
     </div>
@@ -39,22 +39,6 @@ export default {
   h2 {
     margin-bottom: 25px;
     font-size: 45px;
-  }
-
-  button {
-    background-color: #ff4450;
-    color: white;
-    border: 0;
-    border-radius: 50px;
-    padding: 20px 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 50px;
-    transition: background-color 0.4s;
-  }
-  button:hover {
-    background-color: #e53d48;
-    cursor: pointer;
   }
 }
 </style>
