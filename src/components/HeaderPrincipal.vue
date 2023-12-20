@@ -1,68 +1,97 @@
 <script></script>
 
 <template>
-  <div class="container flex principal">
-    <!-- Logo -->
-    <div>
-      <img src="/img/MasterStudy.svg" alt="Logo" />
-    </div>
-    <!-- /Logo -->
-    <!-- Search bar -->
-    <div class="flex find">
-      <div>Category</div>
-      <div>
-        <input type="text" placeholder="Search courses" />
-        <span class="m-glass"
-          ><font-awesome-icon icon="fa-solid fa-magnifying-glass"
-        /></span>
+  <div class="container flex">
+    <div class="logo"><img src="/img/MasterStudy.svg" alt="logo" /></div>
+    <div class="flex research">
+      <div class="category">
+        <font-awesome-icon icon="fa-solid fa-bars" /><span>category</span>
+      </div>
+      <div class="search-bar flex">
+        <input type="text" placeholder="Search Courses" />
+        <font-awesome-icon
+          icon="fa-solid fa-magnifying-glass"
+          class="mg-glass"
+        />
       </div>
     </div>
-    <!-- /Search bar -->
-    <!-- Altro -->
-    <div class="flex plus">
+    <div class="flex third-section">
       <div>
-        <font-awesome-icon icon="fa-solid fa-bullhorn" />Become an instructor
+        <font-awesome-icon icon="fa-solid fa-bullhorn" /><span
+          >Become an instructor</span
+        >
       </div>
       <div>
-        <font-awesome-icon icon="fa-solid fa-briefcase" />For enterprise
+        <font-awesome-icon icon="fa-solid fa-briefcase" /><span
+          >For Enterprise</span
+        >
       </div>
     </div>
-    <!-- /Altro -->
-    <!-- Log in -->
-    <div class="flex sign">
-      <div><font-awesome-icon icon="fa-regular fa-user" />Log in</div>
-      <button type="button" class="btn btn-danger">Sign in</button>
-      <div><font-awesome-icon icon="fa-regular fa-bookmark" /></div>
+    <div class="flex log-in">
+      <div>
+        <font-awesome-icon icon="fa-regular fa-user" /><span>Log in</span>
+      </div>
+      <div><button class="btn-red">Sign up</button></div>
+      <div>
+        <font-awesome-icon icon="fa-regular fa-bookmark" class="bookmark" />
+      </div>
     </div>
-    <!-- /Log in -->
   </div>
 </template>
 
 <style scoped lang="scss">
-.m-glass {
-  background-color: #457992;
-  color: white;
-}
-
-.find {
-  gap: 25px;
+.container {
+  justify-content: space-between;
   align-items: center;
-}
+  padding: 20px 20px;
+  font-size: 14px;
+  color: #1f2c43;
+  .logo {
+    max-width: 250px;
+  }
+  span {
+    margin-left: 10px;
+  }
 
-input {
-  border: 0;
-}
+  .research {
+    gap: 15px;
+    align-items: center;
+    margin-right: 50px;
+    .search-bar {
+      align-items: center;
 
-.principal {
-  gap: 50px;
-  align-items: center;
-  justify-content: space-around;
-  padding: 25px 0;
-}
+      input {
+        min-width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #f0f2f5;
+      }
+      .mg-glass {
+        background-color: #457992;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .mg-glass:hover {
+        background-color: #3a6579;
+      }
+    }
+  }
+  .third-section {
+    gap: 30px;
+  }
 
-.plus,
-.sign {
-  gap: 30px;
-  align-items: center;
+  .log-in {
+    gap: 30px;
+    align-items: center;
+    .btn-red {
+      margin: 0;
+    }
+    .bookmark {
+      font-size: 20px;
+    }
+  }
 }
 </style>
