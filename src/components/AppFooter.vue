@@ -1,11 +1,23 @@
 <script>
+import FooterTop from './FooterTop.vue';
+import FooterBottom from './FooterBottom.vue';
+
 export default {
   name: 'AppFooter',
+  components: { FooterTop, FooterBottom },
 };
 </script>
 
 <template>
-  <h1>Template</h1>
+  <footer>
+    <FooterTop />
+    <FooterBottom />
+  </footer>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+* {
+  background-color: #273044;
+  color: white;
+}
+</style>

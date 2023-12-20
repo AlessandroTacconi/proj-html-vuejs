@@ -24,14 +24,16 @@ export default {
 </script>
 
 <template>
-  <Jumbo />
-  <MainDevCourses />
-  <MainLimitlessLearning />
-  <MainRecentCourses />
-  <MainSubscribe />
-  <MainPopCourses />
-  <MainStart />
-  <MainYourFuture />
+  <main>
+    <Jumbo />
+    <MainDevCourses />
+    <MainLimitlessLearning />
+    <MainRecentCourses />
+    <MainSubscribe />
+    <MainPopCourses />
+    <MainStart />
+    <MainYourFuture />
+  </main>
 </template>
 
 <style scoped></style>
