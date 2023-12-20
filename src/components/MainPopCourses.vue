@@ -217,7 +217,7 @@ export default {
   border: 1px solid #beb7b4;
   background-color: white;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 
 .square-button:hover {

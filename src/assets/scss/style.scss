@@ -65,9 +65,9 @@
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 50px;
-  transition: background-color 0.4s;
+  transition: background-color 0.2s;
 }
-button:hover {
-  background-color: #e53d48;
+.btn-red:hover {
+  background-color: #cc3640;
   cursor: pointer;
 }

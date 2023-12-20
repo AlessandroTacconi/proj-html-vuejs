@@ -5,6 +5,7 @@ import MainLimitlessLearning from './MainLimitlessLearning.vue';
 import MainRecentCourses from './MainRecentCourses.vue';
 import MainSubscribe from './MainSubscribe.vue';
 import MainPopCourses from './MainPopCourses.vue';
+import MainStart from './MainStart.vue';
 
 export default {
   name: 'AppMain',
@@ -15,6 +16,7 @@ export default {
     MainRecentCourses,
     MainSubscribe,
     MainPopCourses,
+    MainStart,
   },
 };
 </script>
@@ -26,7 +28,7 @@ export default {
   <MainRecentCourses />
   <MainSubscribe />
   <MainPopCourses />
-  <h2>Cards</h2>
+  <MainStart />
   <h2>Investing For Your Future</h2>
 </template>
 
