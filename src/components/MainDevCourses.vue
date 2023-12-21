@@ -29,8 +29,11 @@ export default {
               <div class="stars">
                 <font-awesome-icon
                   v-for="star in course.stars"
-                  :key="star"
                   icon="fa-solid fa-star"
+                />
+                <font-awesome-icon
+                  icon="fa-regular fa-star"
+                  v-for="star in 5 - course.stars.length"
                 />
               </div>
               <div class="price">

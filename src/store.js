@@ -6,7 +6,7 @@ export const store = reactive({
       image: '/img/ipad.jpg',
       field: 'Development >',
       title: 'The complete iOS 10 & Swift 3 Developer Coourse',
-      stars: [1, 2, 3, 4], // Adjust based on your rating
+      stars: [1, 2, 3, 4],
       oldPrice: '$ 199.99',
       newPrice: '$ 100',
     },
@@ -22,7 +22,7 @@ export const store = reactive({
       image: '/img/code.jpg',
       field: 'Development >',
       title: 'Web Design for beginners: Real World Coding in HTML & CSS',
-      stars: [1, 2, 3, 4],
+      stars: [1, 2, 3, 4, 5],
       oldPrice: '$ 129.99',
       newPrice: '$ 65',
     },

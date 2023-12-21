@@ -12,7 +12,6 @@ export default {
     </div>
     <!-- /logo -->
     <!-- research -->
-
     <div class="flex research">
       <div class="category">
         <font-awesome-icon icon="fa-solid fa-bars" /><span>category</span>

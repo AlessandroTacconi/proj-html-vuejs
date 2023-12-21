@@ -27,7 +27,7 @@ export default {
         <li><button>Office Poductivity</button></li>
       </ul>
       <!-- /BUTTONS -->
-
+      <!-- CARDS -->
       <ul class="flex cards">
         <li v-for="course in store.courses.slice(0, 12)" class="card">
           <a href="#">
@@ -38,9 +38,12 @@ export default {
               <div class="flex info-courses">
                 <div class="stars">
                   <font-awesome-icon
-                    v-for="star in course.stars"
-                    :key="star"
                     icon="fa-solid fa-star"
+                    v-for="star in course.stars.length"
+                  />
+                  <font-awesome-icon
+                    icon="fa-regular fa-star"
+                    v-for="star in 5 - course.stars.length"
                   />
                 </div>
                 <div class="price">
@@ -52,6 +55,8 @@ export default {
           </a>
         </li>
       </ul>
+      <!-- /CARDS -->
+
       <!-- button -->
       <div class="flex btn"><button class="btn-red flex">Show All</button></div>
       <!-- button -->
