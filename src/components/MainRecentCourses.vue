@@ -24,7 +24,7 @@ export default {
         <li><button>IT & Software</button></li>
         <li><button>Lifestyle</button></li>
         <li><button>Marketing</button></li>
-        <li><button>Office Poductivity</button></li>
+        <li><button>Office Productivity</button></li>
       </ul>
       <!-- /BUTTONS -->
       <!-- CARDS -->
