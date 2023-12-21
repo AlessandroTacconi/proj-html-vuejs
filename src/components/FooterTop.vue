@@ -46,7 +46,7 @@ export default {
           v-for="logo in logos"
           :style="{ backgroundColor: logo.backgroundColor }"
         >
-          <a href="#"> <font-awesome-icon :icon="logo.logo" /></a>
+          <a href="#" class="logo"><font-awesome-icon :icon="logo.logo" /></a>
         </li>
       </ul>
     </div>

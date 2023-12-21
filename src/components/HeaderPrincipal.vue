@@ -13,9 +13,12 @@ export default {
     <!-- /logo -->
     <!-- research -->
     <div class="flex research">
-      <div class="category">
-        <font-awesome-icon icon="fa-solid fa-bars" /><span>category</span>
-      </div>
+      <a href="#">
+        <div class="category">
+          <font-awesome-icon icon="fa-solid fa-bars" /><span>category</span>
+        </div></a
+      >
+
       <div class="search-bar flex">
         <input type="text" placeholder="Search Courses" />
         <font-awesome-icon
@@ -53,10 +56,8 @@ export default {
         >
       </div>
       <div><button class="btn-red">Sign up</button></div>
-      <div>
-        <a href="#">
-          <font-awesome-icon icon="fa-regular fa-bookmark" class="bookmark"
-        /></a>
+      <div class="bookmark">
+        <a href="#"> <font-awesome-icon icon="fa-regular fa-bookmark" /></a>
       </div>
     </div>
     <!-- /log-in -->
@@ -115,6 +116,9 @@ export default {
     }
     .bookmark {
       font-size: 20px;
+      :hover {
+        color: #ff4450;
+      }
     }
   }
 }
