@@ -1,7 +1,20 @@
 <script>
 export default {
   name: 'FooterTop',
-  components: {},
+  data() {
+    return {
+      logos: [
+        { logo: 'fa-brands fa-facebook', backgroundColor: '#3b5998' },
+        { logo: 'fa-brands fa-instagram', backgroundColor: '#c32aa3' },
+        { logo: 'fa-brands fa-linkedin', backgroundColor: '#0077b5' },
+        { logo: 'fa-brands fa-pinterest', backgroundColor: '#bd081c' },
+        { logo: 'fa-brands fa-twitter', backgroundColor: '#1da1f2' },
+        { logo: 'fa-brands fa-dribbble', backgroundColor: '#ea4c89' },
+        { logo: 'fa-brands fa-google-plus', backgroundColor: '#db4437' },
+        { logo: 'fa-brands fa-skype', backgroundColor: '#00aff0' },
+      ],
+    };
+  },
 };
 </script>
 
@@ -27,16 +40,15 @@ export default {
     </div>
     <div>
       <h5>Social Network</h5>
-      <div class="social flex">
-        <font-awesome-icon icon="fa-brands fa-facebook" class="logo" />
-        <font-awesome-icon icon="fa-brands fa-facebook" class="logo" />
-        <font-awesome-icon icon="fa-brands fa-facebook" class="logo" />
-        <font-awesome-icon icon="fa-brands fa-facebook" class="logo" />
-        <font-awesome-icon icon="fa-brands fa-facebook" class="logo" />
-        <font-awesome-icon icon="fa-brands fa-facebook" class="logo" />
-        <font-awesome-icon icon="fa-brands fa-facebook" class="logo" />
-        <font-awesome-icon icon="fa-brands fa-facebook" class="logo" />
-      </div>
+      <ul class="social flex">
+        <li
+          class="logo"
+          v-for="logo in logos"
+          :style="{ backgroundColor: logo.backgroundColor }"
+        >
+          <a href="#"> <font-awesome-icon :icon="logo.logo" /></a>
+        </li>
+      </ul>
     </div>
     <div><img src="/img/udemy.jpg" alt="udemy" /></div>
   </div>
@@ -73,14 +85,20 @@ export default {
 
   .social {
     flex-wrap: wrap;
-    max-width: 210px;
+    max-width: 230px;
     gap: 10px;
     .logo {
-      font-size: 14px;
-      background-color: #3b5998;
-      padding: 12px;
+      font-size: 1rem;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
       border-radius: 50%;
     }
+  }
+
+  li {
+    list-style: none;
   }
 }
 </style>

@@ -3,7 +3,9 @@
 <template>
   <div class="container flex">
     <!-- logo -->
-    <div class="logo"><img src="/img/MasterStudy.svg" alt="logo" /></div>
+    <div class="logo">
+      <a href=""><img src="/img/MasterStudy.svg" alt="logo" /></a>
+    </div>
     <!-- /logo -->
     <!-- research -->
 
@@ -24,13 +26,17 @@
 
     <div class="flex third-section">
       <div>
-        <font-awesome-icon icon="fa-solid fa-bullhorn" /><span
-          >Become an instructor</span
+        <a href="#">
+          <font-awesome-icon icon="fa-solid fa-bullhorn" /><span
+            >Become an instructor</span
+          ></a
         >
       </div>
       <div>
-        <font-awesome-icon icon="fa-solid fa-briefcase" /><span
-          >For Enterprise</span
+        <a href="">
+          <font-awesome-icon icon="fa-solid fa-briefcase" /><span
+            >For Enterprise</span
+          ></a
         >
       </div>
     </div>
@@ -39,11 +45,15 @@
 
     <div class="flex log-in">
       <div>
-        <font-awesome-icon icon="fa-regular fa-user" /><span>Log in</span>
+        <a href="#">
+          <font-awesome-icon icon="fa-regular fa-user" /><span>Log in</span></a
+        >
       </div>
       <div><button class="btn-red">Sign up</button></div>
       <div>
-        <font-awesome-icon icon="fa-regular fa-bookmark" class="bookmark" />
+        <a href="#">
+          <font-awesome-icon icon="fa-regular fa-bookmark" class="bookmark"
+        /></a>
       </div>
     </div>
     <!-- /log-in -->

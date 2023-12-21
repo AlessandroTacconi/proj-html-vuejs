@@ -20,6 +20,7 @@ import { faBullhorn } from '@fortawesome/free-solid-svg-icons';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faBookmark } from '@fortawesome/free-regular-svg-icons';
+import { faBookmark as faBookmarkSolid } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faChartLine } from '@fortawesome/free-solid-svg-icons';
 import { faPalette } from '@fortawesome/free-solid-svg-icons';
@@ -31,6 +32,9 @@ import { faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faSkype } from '@fortawesome/free-brands-svg-icons';
+import { faDribbble } from '@fortawesome/free-brands-svg-icons';
+import { faPinterest } from '@fortawesome/free-brands-svg-icons';
 
 /* add icons to the library */
 library.add(
@@ -45,6 +49,7 @@ library.add(
   faBriefcase,
   faUser,
   faBookmark,
+  faBookmarkSolid,
   faMagnifyingGlass,
   faChartLine,
   faPalette,
@@ -55,7 +60,10 @@ library.add(
   faStarHalfStroke,
   faAngleLeft,
   faAngleRight,
-  faBars
+  faBars,
+  faSkype,
+  faDribbble,
+  faPinterest
 );
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');

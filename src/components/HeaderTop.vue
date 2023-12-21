@@ -17,21 +17,35 @@
       <!-- Menu -->
       <div class="right flex">
         <ul class="menu flex">
-          <li>home</li>
-          <li>Pages</li>
-          <li>Course Formats</li>
-          <li>Courses</li>
-          <li>Demos</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Course Formats</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Demos</a></li>
         </ul>
         <!-- /Menu -->
         <!-- Social -->
         <ul class="logo flex">
-          <li><font-awesome-icon icon="fa-brands fa-facebook" /></li>
-          <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
-          <li><font-awesome-icon icon="fa-brands fa-instagram" /></li>
-          <li><font-awesome-icon icon="fa-brands fa-linkedin" /></li>
-          <li><font-awesome-icon icon="fa-brands fa-google-plus" /></li>
-          <li><font-awesome-icon icon="fa-brands fa-youtube" /></li>
+          <li>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
+          </li>
+          <li>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+          </li>
+          <li>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><font-awesome-icon icon="fa-brands fa-google-plus"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-youtube" /></a>
+          </li>
         </ul>
         <!-- /Social -->
       </div>
