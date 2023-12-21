@@ -2,7 +2,7 @@
 
 .container {
   margin: auto;
-  max-width: 1400px;
+  max-width: 1700px;
 }
 
 .container2 {
@@ -17,8 +17,11 @@
 .cards {
   justify-content: center;
   gap: 20px;
+  max-width: 100%;
+  flex-wrap: wrap;
   .card {
     border: 1px solid #e0e0e0;
+    max-width: calc((100% / 6) - 20px);
     img {
       max-width: 100%;
       height: auto;
@@ -75,4 +78,8 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+li {
+  list-style: none;
 }

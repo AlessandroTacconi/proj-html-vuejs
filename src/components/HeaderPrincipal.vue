@@ -1,4 +1,8 @@
-<script></script>
+<script>
+export default {
+  name: 'HeaderPrincipal',
+};
+</script>
 
 <template>
   <div class="container flex">

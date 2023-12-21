@@ -88,7 +88,7 @@ export default {
     max-width: 230px;
     gap: 10px;
     .logo {
-      font-size: 1rem;
+      font-size: 18px;
       width: 45px;
       height: 45px;
       line-height: 45px;

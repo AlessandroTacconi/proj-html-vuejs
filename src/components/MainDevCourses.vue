@@ -1,7 +1,14 @@
 <script>
+import { store } from '../store';
 export default {
   name: 'MainPopCourses',
-  components: {},
+  data() {
+    return {
+      devCourses: store.courses.filter(
+        (course) => course.field === 'Development >'
+      ),
+    };
+  },
 };
 </script>
 
@@ -10,153 +17,32 @@ export default {
     <!-- TITLE -->
     <h3>Popular Development Courses</h3>
     <!-- /TITLE -->
-
-    <div class="flex cards">
-      <!-- CARD1 -->
-      <div class="card">
-        <img src="/img/ipad.jpg" alt="ipad" />
-        <div class="info">
-          <div class="field-courses">Development></div>
-          <div class="title-courses">
-            The complete iOS 10 & Swift 3 Developer Coourse
-          </div>
-          <div class="flex info-courses">
-            <div class="stars">
-              <font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star-half-stroke" />
-            </div>
-            <div class="price">
-              <div class="old-price">$ 199.99</div>
-              <div class="new-price">$ 100</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /CARD1 -->
-      <!-- CARD2 -->
-      <div class="card">
-        <img src="/img/code.jpg" alt="code" />
-        <div class="info">
-          <div class="field-courses">Development></div>
-          <div class="title-courses">
-            The complete iOS 10 & Swift 3 Developer Coourse
-          </div>
-          <div class="flex info-courses">
-            <div class="stars">
-              <font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star-half-stroke" />
-            </div>
-            <div class="price">
-              <div class="old-price">$ 199.99</div>
-              <div class="new-price">$ 100</div>
+    <!-- cards -->
+    <ul class="flex cards">
+      <li v-for="course in devCourses" class="card">
+        <a href="#">
+          <img :src="course.image" :alt="course.title" />
+          <div class="info">
+            <div class="field-courses">{{ course.field }}</div>
+            <div class="title-courses">{{ course.title }}</div>
+            <div class="flex info-courses">
+              <div class="stars">
+                <font-awesome-icon
+                  v-for="star in course.stars"
+                  :key="star"
+                  icon="fa-solid fa-star"
+                />
+              </div>
+              <div class="price">
+                <div class="old-price">{{ course.oldPrice }}</div>
+                <div class="new-price">{{ course.newPrice }}</div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- /CARD2 -->
-      <!-- CARD3 -->
-      <div class="card">
-        <img src="/img/git.jpg" alt="git" />
-        <div class="info">
-          <div class="field-courses">Development></div>
-          <div class="title-courses">
-            The complete iOS 10 & Swift 3 Developer Coourse
-          </div>
-          <div class="flex info-courses">
-            <div class="stars">
-              <font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star-half-stroke" />
-            </div>
-            <div class="price">
-              <div class="old-price">$ 199.99</div>
-              <div class="new-price">$ 100</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /CARD3 -->
-      <!-- CARD4 -->
-      <div class="card">
-        <img src="/img/iphone.jpg" alt="iphone" />
-        <div class="info">
-          <div class="field-courses">Development></div>
-          <div class="title-courses">
-            The complete iOS 10 & Swift 3 Developer Coourse
-          </div>
-          <div class="flex info-courses">
-            <div class="stars">
-              <font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star-half-stroke" />
-            </div>
-            <div class="price">
-              <div class="old-price">$ 199.99</div>
-              <div class="new-price">$ 100</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /CARD4 -->
-      <!-- CARD5 -->
-      <div class="card">
-        <img src="/img/android.jpg" alt="android" />
-        <div class="info">
-          <div class="field-courses">Development></div>
-          <div class="title-courses">
-            The complete iOS 10 & Swift 3 Developer Coourse
-          </div>
-          <div class="flex info-courses">
-            <div class="stars">
-              <font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star-half-stroke" />
-            </div>
-            <div class="price">
-              <div class="old-price">$ 199.99</div>
-              <div class="new-price">$ 100</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /CARD5 -->
-      <!-- CARD6 -->
-      <div class="card">
-        <img src="/img/x.jpg" alt="x" />
-        <div class="info">
-          <div class="field-courses">Development></div>
-          <div class="title-courses">
-            The complete iOS 10 & Swift 3 Developer Coourse
-          </div>
-          <div class="flex info-courses">
-            <div class="stars">
-              <font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star" /><font-awesome-icon
-                icon="fa-solid fa-star"
-              /><font-awesome-icon icon="fa-solid fa-star-half-stroke" />
-            </div>
-            <div class="price">
-              <div class="old-price">$ 199.99</div>
-              <div class="new-price">$ 100</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /CARD6 -->
-    </div>
+        </a>
+      </li>
+    </ul>
+    <!-- /cards -->
   </div>
 </template>
 
